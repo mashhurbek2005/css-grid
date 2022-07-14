@@ -1,17 +1,4 @@
-/* VARIABLES */
-
-:root{
-  /* --main-text-color : #fff; */
-  /* --main-bg-color : #fff; */
-  /* --main-font-size : 16px; */
-  /* --main-font-weight : 400; */
-  /* --main-line-height : 1.5; */
-}
-
-/* GENERAL */
-
-html{
-  height: 100%;
+*{
   box-sizing: border-box;
 }
 
@@ -21,15 +8,9 @@ img{
 }
 
 body{
-  display: flex;
-  flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
-  /* line-height: var(--main-line-height); */
 }
 
 
@@ -49,16 +30,93 @@ body{
 /* CONTAINER */
 
 .container{
-  /* max-width: your-size-here; */
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
 }
 
-/* STICKY-FOOTER */
-.site-main{
-  flex-grow: 1;
+.hero{
+  padding-top: 50px;
 }
 
+.grid{
+  display: grid;
+  grid-template: repeat(6, 200px) / repeat(3, 250px);  
+  grid-gap: 40px;
+  justify-content: center;
+}
 
+.grid__box:nth-child(1){
+  background-image: url("../images/grid1.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid__box:nth-child(2){
+  background-image: url("../images/grid2.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+.grid__box:nth-child(3){
+  background-image: url("../images/grid3.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid__box:nth-child(4){
+  background-image: url("../images/grid4.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-row: 2/4;
+}
+
+.grid__box:nth-child(5){
+  background-image: url("../images/grid5.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-row: 3/5;
+  grid-column: 2/3;
+}
+
+.grid__box:nth-child(6){
+  background-image: url("../images/grid6.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+
+.grid__box:nth-child(7){
+  background-image: url("../images/grid7.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-row: 4/6;
+}
+
+.grid__box:nth-child(8){
+  background-image: url("../images/grid8.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid__box:nth-child(9){
+  background-image: url("../images/grid9.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-row: 4/6;
+  grid-column: 3/4;
+}
